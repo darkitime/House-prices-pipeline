@@ -1,0 +1,11 @@
+Model,Best_CV_RMSE,Time_sec,Best_Params
+CatBoost,0.12035,2368.2,"{'model__depth': 5, 'model__iterations': 1000, 'model__l2_leaf_reg': 3, 'model__learning_rate': 0.05, 'model__rsm': 0.9, 'model__subsample': 0.9}"
+SVR,0.12544,143.63,"{'model__C': 5.0, 'model__epsilon': 0.01, 'model__gamma': 'scale', 'model__kernel': 'rbf', 'prep__num__scaler': StandardScaler()}"
+LightGBM,0.12657,249.96,"{'model__extra_trees': True, 'model__iterations': 300, 'model__learning_rate': 0.05, 'model__min_child_samples': 10, 'model__num_leaves': 31, 'model__reg_alpha': 0.1, 'model__reg_lambda': 1.0, 'model__subsample': 0.8}"
+Ridge,0.12872,24.75,"{'model__alpha': 5.0, 'model__positive': True, 'prep__cat__encoder__smooth': 5.0, 'prep__num__scaler': RobustScaler()}"
+Lasso,0.12923,22.95,"{'model__alpha': 0.0005, 'model__positive': True, 'model__selection': 'random', 'prep__cat__encoder__smooth': 5.0, 'prep__num__scaler': RobustScaler()}"
+ElasticNet,0.12923,16.37,"{'model__alpha': 0.05, 'model__l1_ratio': 0.1, 'model__selection': 'cyclic', 'prep__num__scaler': StandardScaler()}"
+XGBoost,0.13041,42.14,"{'model__colsample_bytree': 0.8, 'model__iterations': 300, 'model__learning_rate': 0.05, 'model__max_depth': 5, 'model__subsample': 0.8}"
+RandomForest,0.13599,1671.04,"{'model__ccp_alpha': 0.0, 'model__max_depth': None, 'model__max_features': 0.4, 'model__max_samples': None, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 500}"
+KNN,0.16463,15.79,"{'model__metric': 'minkowski', 'model__n_neighbors': 11, 'model__p': 1, 'model__weights': 'distance', 'prep__num__scaler': RobustScaler()}"
+DecisionTree,0.17942,37.43,"{'model__ccp_alpha': 0.0, 'model__max_depth': 8, 'model__max_features': None, 'model__min_samples_leaf': 20, 'model__min_samples_split': 2}"
